@@ -1,5 +1,4 @@
-export const STORE = {
-  lists: [
+export const lists = [
     {
       id: '1',
       header: 'First list',
@@ -20,8 +19,10 @@ export const STORE = {
       header: 'Fourth list',
       cardIds: [ 'l', 'm' ],
     },
-  ],
-  allCards: {
+];
+
+
+export const allCards = {
     'a': { id: 'a', title: 'First card', content: 'lorem ipsum' },
     'b': { id: 'b', title: 'Second card', content: 'lorem ipsum' },
     'c': { id: 'c', title: 'Third card', content: 'lorem ipsum' },
@@ -35,5 +36,4 @@ export const STORE = {
     'k': { id: 'k', title: 'Eleventh card', content: 'lorem ipsum' },
     'l': { id: 'l', title: 'Twelfth card', content: 'lorem ipsum' },
     'm': { id: 'm', title: 'Thirteenth card', content: 'lorem ipsum' },
-  },
-}
+};

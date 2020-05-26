@@ -20,15 +20,13 @@ function generateCard( id, store ) {
 		<CardClass
 			title={ title }
 			content={ content }
-			key_={ 'card' + id }
+			key={ 'card' + id }
 		/>
 	);
 }
 
 function generateList( id, store ) {
-	console.log( id );
 	const list = store.lists.find( list => list.id.localeCompare( id ) === 0 );
-	console.log( list );
 	const header = list.header;
 	const cards = list.cardIds.map( id => generateCard( id, store ) );
 
@@ -36,15 +34,14 @@ function generateList( id, store ) {
 		<ListClass
 			header={ header }
 			cards={ cards }
-			key_={ 'list' + id }
+			key={ 'list' + id }
 		/>
 	);
 }
 
 function App( props ) {
-	console.log( Object.keys(props.store) );
 	const lists = props.store.lists.map( list => generateList( list.id, props.store ) );
-	console.log( lists );
+
 	return (
 		<main className='App'>
 			<Header title="Trelloyes!" />
