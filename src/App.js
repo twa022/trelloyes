@@ -20,7 +20,7 @@ function generateCard( id, store ) {
 		<CardClass
 			title={ title }
 			content={ content }
-			key={ 'card' + id }
+			key={ 'card_' + id }
 		/>
 	);
 }
@@ -34,7 +34,7 @@ function generateList( id, store ) {
 		<ListClass
 			header={ header }
 			cards={ cards }
-			key={ 'list' + id }
+			key={ 'list_' + id }
 		/>
 	);
 }
